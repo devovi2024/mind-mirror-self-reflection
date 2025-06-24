@@ -2,7 +2,6 @@
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Features from '../components/Features';
-import Main from '../components/Main';
 import Footer from '../components/Footer';
 import TrustSection from '../components/TrustSection';
 import MindMirronTopics from '../components/MindMirronTopics';

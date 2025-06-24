@@ -4,16 +4,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import ReflectionForm from './components/ReflectionForm';
-import EntryList from './components/EntryList';
-import StatsPanel from './components/StatsPanel';
+
 
 function MindMirror() {
   return (
     <div >
-      <h1 >🧠 MindMirror</h1>
       <ReflectionForm />
-      {/* <EntryList />
-      <StatsPanel /> */}
     </div>
   );
 }

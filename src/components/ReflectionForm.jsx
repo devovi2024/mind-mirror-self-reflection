@@ -5,6 +5,7 @@ import BlogList from './BlogList';
 import EntryList from './EntryList';
 import StatsPanel from './StatsPanel';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 function ReflectionForm() {
   const dispatch = useDispatch();
@@ -38,7 +39,6 @@ function ReflectionForm() {
       <div className="bg-black font-serif  md:px-20 ">
       <div className="flex flex-col md:flex-row gap-10">
 
-        {/* Form div - 2/3 width */}
         <div className="md:w-2/3 w-full bg-[#121212] rounded-xl shadow-lg px-10 py-12 space-y-8">
           <h2 className="text-3xl font-extrabold text-white text-center tracking-wide">
             Daily Reflection
@@ -91,7 +91,6 @@ function ReflectionForm() {
             </div>
 
             <div className="flex justify-between gap-4">
-              {/* Red CTA button */}
               <button
                 type="submit"
                 className="flex-1 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-full
@@ -100,7 +99,6 @@ function ReflectionForm() {
                 Reflect
               </button>
 
-              {/* Example Green CTA button - disabled for demonstration */}
               <button
                 type="button"
                 disabled
@@ -110,7 +108,6 @@ function ReflectionForm() {
                 Save Draft
               </button>
 
-              {/* Example White CTA button */}
               <button
                 type="button"
                 className="flex-1 bg-white hover:bg-gray-200 text-black font-semibold py-3 rounded-full
@@ -122,7 +119,6 @@ function ReflectionForm() {
           </form>
         </div>
 
-        {/* Entry List div - 1/3 width */}
         <div className="md:w-1/3 w-full flex flex-col gap-6">
           <div className=" rounded-xl shadow-lg p-6 text-black">
             <EntryList />
@@ -133,9 +129,12 @@ function ReflectionForm() {
         </div>
       </div>
 
-      {/* BlogList div */}
       <div className="mt-10">
         <BlogList />
+      </div>
+
+      <div>
+        <Footer/>
       </div>
     </div>
     </section>

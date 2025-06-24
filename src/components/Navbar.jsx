@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCircle, FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -38,10 +39,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
 
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <FaCircle className="text-purple-600 text-lg" />
-            <span className="text-xl font-bold text-gray-900">fundsmate</span>
-          </div>
+          <Link to="/">
+            <div className="flex items-center space-x-2 cursor-pointer">
+              <FaCircle className="text-purple-600 text-lg" />
+              <span className="text-xl font-bold text-gray-900">fundsmate</span>
+            </div>
+          </Link>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
