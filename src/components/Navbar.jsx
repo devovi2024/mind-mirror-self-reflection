@@ -88,9 +88,12 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-purple-100 text-purple-700 border border-purple-300 px-5 py-2 rounded-full hover:bg-purple-200 font-medium transition-all duration-200">
-              Get started
-            </button>
+
+                      <Link
+                        to="/reflection"
+                        className="bg-purple-100 text-purple-700 border border-purple-300 px-5 py-2 rounded-full hover:bg-purple-200 font-medium transition-all duration-200">
+                        Get Started
+                      </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -130,9 +133,12 @@ const Navbar = () => {
               </div>
             ))}
             <div className="p-4">
-              <button className="w-full bg-purple-100 text-purple-700 border border-purple-300 py-2 rounded-full hover:bg-purple-200 font-medium transition">
-                Get started
-              </button>
+          <Link
+            to="/reflection"
+            className="inline-block mt-2 px-6 py-3 border border-[#a07656] text-[#a07656] bg-transparent hover:bg-[#a07656] hover:text-white transition-all duration-300 rounded-md uppercase tracking-wide shadow-md"
+          >
+            Get Started
+          </Link>
             </div>
           </div>
         )}
