@@ -42,7 +42,7 @@ const Navbar = () => {
           <Link to="/">
             <div className="flex items-center space-x-2 cursor-pointer">
               <FaCircle className="text-purple-600 text-lg" />
-              <span className="text-xl font-bold text-gray-900">fundsmate</span>
+              <span className="text-xl font-bold text-gray-900">Mind Mirror</span>
             </div>
           </Link>
 

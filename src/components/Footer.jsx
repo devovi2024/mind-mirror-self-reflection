@@ -31,7 +31,7 @@ function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-2 text-[#7d5a4f]">Mind Mirror</h3>
           <p className="text-sm text-[#4b4b4b]">
-            Vintage self-reflection tools for modern calm.  
+            Mind self-reflection tools for modern calm.  
           </p>
           <p className="text-xs mt-2 text-[#a07656]">© 2025 Mind Mirror. All rights reserved.</p>
         </div>
